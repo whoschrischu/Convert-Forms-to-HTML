@@ -1,0 +1,1140 @@
+<!doctype html>
+<html>
+<head>
+	<title>Employment (Español)</title>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+
+	<style type = "text/css">
+		
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		h1{
+			text-align: center;
+		}
+
+		.personal{
+			background-color: gray;
+			border: 1px black solid;
+			text-align: center;
+		}
+		
+
+		.names{
+			
+			display: inline-block;
+			float: left;
+			width: 60%;
+			border: 1px black solid;
+		}
+
+		.email{
+			
+			display: inline;
+			height: 129px;
+			text-align: center;
+			border: 1px black solid;
+		}
+
+		.clear{
+			clear: both;
+		}
+
+		.address{
+			padding-left: 10%;
+			font-family: Arial, Helvetica, sans-serif;
+			padding-top: 10px;
+			border: 1px black solid;
+		}
+
+		.phone{
+			border: 1px black solid;
+			text-align: center;
+		}
+
+		.space{
+			text-align: center;
+		}
+
+		.availability{
+			background-color: gray;
+			border: 1px black solid;
+			text-align: center;
+		}
+
+		.times{
+			text-align: center
+		}
+		
+		.history{
+			background-color: gray;
+			border: 1px black solid;
+			text-align: center;
+		}
+
+		.dates{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 15%;
+		}
+
+		.company{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 30%;
+		}
+
+		.supervisor{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 20%;
+		}
+
+		.salary{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 15%;
+		}
+
+		.leaving{
+			border: 1px black solid;
+			text-align: center;
+
+			display: inline-block;
+			width: 19%;
+
+		}
+
+		.datesInput{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 15%;
+			height: 130px;
+		}
+
+		.companyInput{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 30%;
+			height: 130px;
+		}
+
+		.supervisorInput{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 20%;
+			height: 130px;
+		}
+
+		.salaryInput{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 15%;
+			height: 130px;
+		}
+
+		.leavingInput{
+			border: 1px black solid;
+			text-align: center;
+
+			display: inline-block;
+			width: 19%;
+			height: 130px;
+		}
+
+		.additional{
+			border: 1px black solid;
+			text-align: center;
+		}
+
+		.gridEnd{
+			text-align: center;
+		}
+		
+		.education{
+			background-color: gray;
+			border: 1px black solid;
+			text-align: center;
+		}
+
+		.schools{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 15%;
+		}
+
+		.schoolName{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 20%;
+		}
+
+		.cityState{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+
+			width: 15%;
+		}
+
+		.yearsAttended{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 15%;
+		}
+
+		.graduate{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 15%;
+	
+		}
+
+		.degreeMajor{
+			border: 1px black solid;
+			text-align: center;
+
+			display: inline-block;
+			width: 19%;
+		}
+
+		.schoolsInput{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 15%;
+			height: 94px;
+		}
+
+		.schoolNameInput{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 20%;
+			height: 94px;
+		}
+
+		.cityStateInput{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 15%;
+			height: 94px;
+		}
+
+		.yearsAttendedInput{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 15%;
+			height: 94px;
+		}
+
+		.graduateInput{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 15%;
+			height: 94px;
+		}
+
+		.degreeMajorInput{
+			border: 1px black solid;
+			text-align: center;
+
+			display: inline-block;
+			width: 19%;
+			height: 94px;
+		}
+
+		.skills{
+			background-color: gray;
+			border: 1px black solid;
+			text-align: center;
+		}
+
+		.skillsRelated{
+			text-align: center;
+		}
+
+		.workReferences{
+			background-color: gray;
+			border: 1px black solid;
+			text-align: center;
+		}
+
+		.name{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 15%;
+		}
+
+		.relationship{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 20%;
+		}
+
+		.employer{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 20%;
+		}
+
+		.position{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 15%;
+		}
+
+		.addressAndPhone{
+			border: 1px black solid;
+			text-align: center;
+
+			display: inline-block;
+			width: 29%;
+
+		}
+
+		.nameInput{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 15%;
+			height: 54px;
+		}
+
+		.relationshipInput{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 20%;
+			height: 54px;
+		}
+
+		.employerInput{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 20%;
+			height: 54px;
+		}
+
+		.positionInput{
+			border: 1px black solid;
+			text-align: center;
+			float: left;
+			display: inline-block;
+			width: 15%;
+			height: 54px;
+		}
+
+		.addressAndPhoneInput{
+			border: 1px black solid;
+			text-align: center;
+
+			display: inline-block;
+			width: 29%;
+			height: 54px;
+		}
+
+		.relatives{
+			border: 1px black solid;
+			text-align: center;
+		}
+
+		.relativesInfo{
+			border: 1px black solid;
+			text-align: center;
+		}
+
+		.referrals{
+			text-align: center;
+		}
+
+		.lastPic{
+			float: left;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<img src = "GeneralCoatings.png" />
+	<h1><strong>SOLICITUD DE EMPLEO</strong></h1>
+	<p>Tanto la política de la compañía como la ley federal y estatal prohíben la discriminación debido al sexo, raza, color, género, religión, origen nacional/descendencia, edad, discapacidad mental o física, condición médica, estado civil, orientación sexual, orientación/identificación  de género, condición de veterano discapacitado, condición de veterano de la época de Vietnam, o cualquier otra característica contemplada  por la ley federal o estatal. Este es un entorno laboral libre de drogas. Como condición del empleo, todas las personas que hayan sido recientemente contratadas deberán realizar pruebas de detección de drogas. El empleo con la Compañía está sujeto a la obtención de resultados satisfactorios en las pruebas de detección de drogas y sustancias controladas</p>
+	<p><strong><i>Escriba a máquina o con letra de imprenta legible. Responda a todas las preguntas de la solicitud a su mejor saber y entender.  La omisión o falsificación ocasionará la negativa a su contratación o el despido en caso de que usted sea contratado.
+</i></strong></p>
+	
+	<hr/>
+
+	<form action = "URL" method="get">
+		<p><strong>PUESTO QUE SOLICITA</strong>
+		<input type = "text" name="position" placeholder="position" />
+
+		<strong>&nbsp&nbsp&nbsp&nbsp&nbspESTABLECIMIENTO/DIVISIÓN</strong>
+		<input type = "text" name ="posiLoca" placeholder="location/division" />
+
+		<strong>&nbsp&nbsp&nbsp&nbsp&nbspFECHA</strong>
+		<input type = "text" name="date" placeholder="date" /></p>
+
+			<div class="personal">
+				<h2><strong>Personal Information</strong></h2>
+			</div>
+
+			<div class = "names">
+				<p>Apellido <input type = "text" name = "lastName"/> 
+				&nbsp&nbsp&nbsp&nbspPrimer nombre <input type = "text" name = "firstName"/> 
+				<br/>&nbsp&nbsp&nbsp&nbspSegundo nombre <input type = "text" name = "midName"/> </p>			
+				<p>¿Ha utilizado otro nombre alguna vez?  En caso afirmativo, escríbalo</p>
+				<textarea></textarea>
+			</div>
+
+			<div class = "email">
+				<p>CORREO ELECTRONICO <input type = "email" name = "email" placeholder="email address" /> </p>
+			</div>
+			
+			<div class = clear></div>
+
+			<div class = "address">
+
+				<p><strong>DIRECCIÓN ACTUAL</strong><input type = "text" name="presentAddress" placeholder="full address" />
+				<strong>(Ciudad)</strong><input type = "text" name="city"/> 
+				<strong>(Estado)</strong><input type = "text" name="state"/>
+				<strong>(Código Postal)</strong><input type = "text" name="zipCode"/></p>
+				<p>¿Ha vivido en algún otro país en los últimos 7 años?  En caso afirmativo, escríbalo <textarea></textarea></p>
+
+
+			</div>
+			
+			<div class = "phone">
+				<p>NO. DE TELÉFONO DEL HOGAR<input type = "text" name ="homePhone"/> NO. DE TELÉFONO CELULAR <input type = "text" name="cellPhone"/> NO. DE TELÉFONO COMERCIAL: <input type = "text" name="businessPhone"/><br/>¿PODEMOS CONTACTARLO A SU TELÉFONO LABORAL? <input type = "radio" name = "choice" />Si <input type = "radio" name = "choice" />No</p>
+			</div>
+
+			<hr />
+
+			<br /> <br />
+			
+			<div class = "space">
+				<p>¿Es mayor de 18 años? <input type = "radio" name = "choice1" />Si <input type = "radio" name = "choice1" />No &nbsp&nbsp&nbsp&nbsp&nbsp <br />¿Está legalmente autorizado a trabajar en los Estados Unidos? <input type = "radio" name = "choice2" />Si <input type = "radio" name = "choice2" />No </p>
+
+				<p><strong>La aceptación está sujeta a la prueba de la autorización legal para trabajar en los Estados Unidos</strong></p>
+				
+				<p>Si se postula para un empleo que demanda la conducción de vehículos, ¿tiene usted una Licencia de Conducir de California Válida? <input type = "radio" name = "choice3" />Si <input type = "radio" name = "choice3" />No</p>
+
+				<p>¿Ha sido condenado alguna bez por un crimen haya que <strong><u>NO SEA</u></strong> <br />(1) un delito relacionado con marihuana considerar la que haya occurido hace más de dos años <br /> (2) un delito relevante para las por el cual usted haya sido referido, y haya participado en un programa se dsvio pre- o post- proceso <input type = "radio" name = "choice4" />Si <input type = "radio" name = "choice4" />No</p>
+
+				<p><strong>Nota:</strong> Esta Compañia no negará el empleo a ningún postulante por el solo hecho de que sido condenado por un delito penal. Esta Compaña, sin embargo, puede naturaleza fecha y circunstancias del delito, asi como analizar si el delito es el obligaciones del puesto al que se postula</p>
+
+				<p>¿Se encuentra usted actualmente bajo arresto o libertad condicional/bajo responsabilidad personal del encausado, con un juicio pendiente por un delito penal? <input type = "radio" name = "choice5" />Si <input type = "radio" name = "choice5" />No</p>
+			</div>
+
+			<div class="availability">
+				<h2><strong>DISPONIBILIDAD</strong></h2>
+			</div>
+
+			<div class = "times">
+				<p> <strong>Estoy disponible para trabajar: <br /><input type = "checkbox" name="check"/> Tiempo Completo sin restricción <input type = "checkbox" name="check"/> Tiempo Parcial <input type = "checkbox" name="check"/> Temporalmente  <input type = "checkbox" name="check"/> Pasantía <input type = "checkbox" name="check"/> Día <input type = "checkbox" name="check"/> Noche </strong> </p>
+
+				<p>Fecha disponible para comenzar a trabajar</p>
+				<textarea></textarea>
+
+				<p>Salario/Sueldo Deseado
+				<input type = "text" name="wage" placeholder ="wage"/>
+				</p>
+			</div>
+
+			<div class="history">
+				<h2><strong>ANTECEDENTES LABORALES / DEBEN LLENARSE TOTALMENTE PARA SER CONSIDERADO/A PARA LA POSICION</strong></h2>
+			</div>
+				
+			<p><strong><u>(Introduzca n / a en los campos vacíos)</u></strong></p>
+			<br /> <br /> <br />
+			<div class = "grid">
+
+				<div class = "dates">
+					<p>Fechas de Empleo</p>
+				</div>
+
+				<div class = "company">
+					<p>Nombre de la Compañía y Ciudad/Estado</p>
+				</div>
+
+				<div class = "supervisor">
+					<p>Supervisor</p>
+				</div>
+				
+				<div class = "salary">
+					<p>Salario</p>
+				</div>
+
+				<div class = "leaving">
+					<p>Razón del Abandono</p>
+				</div>
+				
+				<div class = "datesInput">
+					<p>Desde: <input type = "text" name = "date" placeholder="start date"></p>
+					<p>Hasta <input type = "text" name = "date" placeholder="end date"></p>
+
+				</div>
+
+				<div class = "companyInput">
+					<input type = "text" name = "company"placeholder="company">
+					<input type = "text" name = "city" placeholder="city">
+					<input type = "text" name= "state" placeholder="state">
+				</div>
+
+				<div class = "supervisorInput">
+					<input type = "text" name = "supervisor" placeholder="name">
+				</div>
+				
+				<div class = "salaryInput">
+					<input type = "text" name = "salary" placeholder="salary">
+				</div>
+
+				<div class = "leavingInput">
+					<textarea></textarea>
+				</div>
+
+				<div class = "additional">
+					<p><strong>Titulo/Obligaciones y Responsabilidades </strong> <br />(Arrastre la esquina inferior derecha para obtener más espacio para escribir y leer el) </p><textarea></textarea>
+
+					<p><strong>No. de teléfono de la Compañía </strong> <input type = "text" name = "phone"></input> </p>
+				</div>
+			</div>
+
+			<div class = "grid2">
+				<br /> <br />
+				<div class = "dates">
+					<p>Fechas de Empleo</p>
+				</div>
+
+				<div class = "company">
+					<p>Nombre de la Compañía y Ciudad/Estado</p>
+				</div>
+
+				<div class = "supervisor">
+					<p>Supervisor</p>
+				</div>
+				
+				<div class = "salary">
+					<p>Salario</p>
+				</div>
+
+				<div class = "leaving">
+					<p>Razón del Abandono</p>
+				</div>
+				
+				<div class = "datesInput">
+					<p>Desde: <input type = "text" name = "date" placeholder="start date"></p>
+					<p>Hasta <input type = "text" name = "date" placeholder="end date"></p>
+
+				</div>
+
+				<div class = "companyInput">
+					<input type = "text" name = "company" placeholder="company">
+					<input type = "text" name = "city" placeholder="city">
+					<input type = "text" name = "state" placeholder="state">
+				</div>
+
+				<div class = "supervisorInput">
+					<input type = "text" name = "name" placeholder="name">
+				</div>
+				
+				<div class = "salaryInput">
+					<input type = "text" name = "salary" placeholder="salary">
+				</div>
+
+				<div class = "leavingInput">
+					<textarea></textarea>
+				</div>
+
+				<div class = "additional">
+					<p><strong>Titulo/Obligaciones y Responsabilidades </strong> <br />(Arrastre la esquina inferior derecha para obtener más espacio para escribir y leer el) </p><textarea></textarea>
+
+					<p><strong>No. de teléfono de la Compañía </strong> <input type = "text" name = "phone" /></input> </p>
+				</div>
+			</div>
+		
+			<div class = "grid3">
+				<br /> <br />
+				<div class = "dates">
+					<p>Fechas de Empleo</p>
+				</div>
+
+				<div class = "company">
+					<p>Nombre de la Compañía y Ciudad/Estado</p>
+				</div>
+
+				<div class = "supervisor">
+					<p>Supervisor</p>
+				</div>
+				
+				<div class = "salary">
+					<p>Salario</p>
+				</div>
+
+				<div class = "leaving">
+					<p>Razón del Abandono</p>
+				</div>
+				
+				<div class = "datesInput">
+					<p>Desde: <input type = "text" name = "date" placeholder="start date"></p>
+					<p>Hasta <input type = "text" name = "date" placeholder="end date"></p>
+
+				</div>
+
+				<div class = "companyInput">
+					<input type = "text" name = "company" placeholder="company">
+					<input type = "text" name = "city" placeholder="city">
+					<input type = "text" name = "state" placeholder="state">
+				</div>
+
+				<div class = "supervisorInput">
+					<input type = "text" name = "supervisor" placeholder="name">
+				</div>
+				
+				<div class = "salaryInput">
+					<input type = "text" name = "salary" placeholder="salary">
+				</div>
+
+				<div class = "leavingInput">
+					<textarea></textarea>
+				</div>
+
+				<div class = "additional">
+					<p><strong>Titulo/Obligaciones y Responsabilidades </strong> <br />(Arrastre la esquina inferior derecha para obtener más espacio para escribir y leer el) </p><textarea></textarea>
+
+					<p><strong>No. de teléfono de la Compañía </strong> <input type = "text" name = "phone"></input> </p>
+				</div>
+			</div>
+
+			<div class = "grid4">
+				<br /> <br />
+				<div class = "dates">
+					<p>Fechas de Empleo</p>
+				</div>
+
+				<div class = "company">
+					<p>Nombre de la Compañía y Ciudad/Estado</p>
+				</div>
+
+				<div class = "supervisor">
+					<p>Supervisor</p>
+				</div>
+				
+				<div class = "salary">
+					<p>Salario</p>
+				</div>
+
+				<div class = "leaving">
+					<p>Razón del Abandono</p>
+				</div>
+				
+				<div class = "datesInput">
+					<p>Desde: <input type = "text" name = "date" placeholder="start date"></p>
+					<p>Hasta <input type = "text" name = "date" placeholder="end date"></p>
+
+				</div>
+
+				<div class = "companyInput">
+					<input type = "text" name = "company" placeholder="company">
+					<input type = "text" name = "city" placeholder="city">
+					<input type = "text" name = "state" placeholder="state">
+				</div>
+
+				<div class = "supervisorInput">
+					<input type = "text" name = "supervisor" placeholder="name">
+				</div>
+				
+				<div class = "salaryInput">
+					<input type = "text" name = "salary" placeholder="salary">
+				</div>
+
+				<div class = "leavingInput">
+					<textarea></textarea>
+				</div>
+
+				<div class = "additional">
+					<p><strong>Titulo/Obligaciones y Responsabilidades </strong> <br />(Arrastre la esquina inferior derecha para obtener más espacio para escribir y leer el) </p><textarea></textarea>
+
+					<p><strong>No. de teléfono de la Compañía </strong> <input type = "text" name = "phone" /></input> </p>
+				</div>
+			</div>
+				
+				<div class = "gridEnd">
+					<p>Por favor, identifique y explique todos los períodos de desempleo, excepto las Licencias para Ausentarse aprobadas, de los últimos 5 años</p>
+					<textarea></textarea>
+
+					<p>¿Podemos contactar a los empleadores mencionados más arriba? <input type = "radio" name = "choice6" />Si <input type = "radio" name = "choice6" />No</p>
+					<p>En caso negativo, indique cuáles de ellos no desea que contactemos.</p>
+					<textarea></textarea>
+				</div>
+			</div>
+
+			<hr />
+			
+			<div class="education">
+				<h2><strong>ANTECEDENTES EDUCATIVOS</strong></h2>
+			</div>
+			
+			<p><strong><u>(Introduzca n / a en los campos vacíos)</u></strong></p>
+			<br /> <br /> <br />
+
+			<div class = "eduGrid">
+				<div class = "schools">
+					<p>ESCUELA A LA QUE ASISTIÓ</p>
+				</div>
+
+				<div class = "schoolName">
+					<p>NOMBRE COMPLETO DE LA ESCUELA</p>
+				</div>
+
+				<div class = "cityState">
+					<p>CIUDAD Y ESTADO<br/><br/></p>
+				</div>
+
+				<div class = "yearsAttended">
+					<p>NO. DE AñOS QUE ASISTIÓ</p>
+				</div>
+
+				<div class = "graduate">
+					<p>¿SE GRADUÓ?<br/><br/></p>
+				</div>
+
+				<div class = "degreeMajor">
+					<p>TIPO DE TÍTULO Y ESPECIALIDAD</p>
+				</div>
+			</div>
+
+			<div class = "lastHS">
+
+				<div class = "schoolsInput">
+					<p>Última Escuela Secundaria</p>
+				</div>
+
+				<div class = "schoolNameInput">
+					<input type = "text" name = "schoolName" placeholder="school name" />
+				</div>
+
+				<div class = "cityStateInput">
+					<input type = "text" name = "city" placeholder="city" />
+					<input type = "text" name = "state" placeholder="state" />
+				</div>
+
+				<div class = "yearsAttendedInput">
+					<input type = "text" name = "years" placeholder="# of years" />
+				</div>
+
+				<div class = "graduateInput">
+					<input type = "radio" name = "choice7" />Si <input type = "radio" name = "choice7" />No</p>
+				</div>
+
+				<div class = "degreeMajorInput">
+					<input type = "text" name = "degree" placeholder="degree">
+					
+				</div>
+
+			</div>
+
+			<div class = "juniorCollege">
+
+				<div class = "schoolsInput">
+					<p>Primer Ciclo Universitario</p>
+				</div>
+
+				<div class = "schoolNameInput">
+					<input type = "text" name = "schoolName" placeholder="school name">
+				</div>
+
+				<div class = "cityStateInput">
+					<input type = "text" name = "city" placeholder="city">
+					<input type = "text" name = "state" placeholder="state">
+				</div>
+
+				<div class = "yearsAttendedInput">
+					<input type = "text" name = "years" placeholder="# of years">
+				</div>
+
+				<div class = "graduateInput">
+					<input type = "radio" name = "choice8" />Si <input type = "radio" name = "choice8" />No</p>
+				</div>
+
+				<div class = "degreeMajorInput">
+					<input type = "text" name = "degree" placeholder="degree">
+					
+				</div>
+
+			</div>
+
+			<div class = "collegeUni">
+
+				<div class = "schoolsInput">
+					<p>Universidad</p>
+				</div>
+
+				<div class = "schoolNameInput">
+					<input type = "text" name = "schoolName" placeholder="school name">
+				</div>
+
+				<div class = "cityStateInput">
+					<input type = "text" name = "city" placeholder="city">
+					<input type = "text" name = "state" placeholder="state">
+				</div>
+
+				<div class = "yearsAttendedInput">
+					<input type = "text" name = "years" placeholder="# of years">
+				</div>
+
+				<div class = "graduateInput">
+					<input type = "radio" name = "choice9" />Si <input type = "radio" name = "choice9" />No</p>
+				</div>
+
+				<div class = "degreeMajorInput">
+					<input type = "text" name = "degree" placeholder="degree">
+					
+				</div>
+
+			</div>
+
+			<div class = "gradSchool">
+
+				<div class = "schoolsInput">
+					<p>Escuela de Postgrado</p>
+				</div>
+
+				<div class = "schoolNameInput">
+					<input type = "text" name = "schoolName" placeholder="school name">
+				</div>
+
+				<div class = "cityStateInput">
+					<input type = "text" name = "city" placeholder="city">
+					<input type = "text" name = "state" placeholder="state">
+				</div>
+
+				<div class = "yearsAttendedInput">
+					<input type = "text" name = "years" placeholder="# of years">
+				</div>
+
+				<div class = "graduateInput">
+					<input type = "radio" name = "choice10" />Si <input type = "radio" name = "choice10" />No</p>
+				</div>
+
+				<div class = "degreeMajorInput">
+					<input type = "text" name = "degree" placeholder="degree">
+					
+				</div>
+
+			</div>
+
+			<div class = "tradeSchool">
+
+				<div class = "schoolsInput">
+					<p>Escuela de Oficios</p>
+				</div>
+
+				<div class = "schoolNameInput">
+					<input type = "text" name = "schoolName" placeholder="school name">
+				</div>
+
+				<div class = "cityStateInput">
+					<input type = "text" name = "city" placeholder="city">
+					<input type = "text" name = "state" placeholder="state">
+				</div>
+
+				<div class = "yearsAttendedInput">
+					<input type = "text" name = "years" placeholder="# of years">
+				</div>
+
+				<div class = "graduateInput">
+					<input type = "radio" name = "choice11" />Si <input type = "radio" name = "choice11" />No</p>
+				</div>
+
+				<div class = "degreeMajorInput">
+					<input type = "text" name = "degree" placeholder="degree">
+					
+				</div>
+
+			</div>
+
+			<hr />
+			
+			<br /> <br />
+
+			<div class="skills">
+				<h2><strong>Aptitudes</strong></h2>
+			</div>
+
+			<div class = "skillsRelated">
+				<p>Máquinas que operó</p>
+				<textarea></textarea>
+
+				<p>Conocimientos de Computación</p>
+				<textarea></textarea>
+
+				<p>Otras Aptitudes/Licencias/Certificados</p>
+				<textarea></textarea>
+
+			</div>
+			
+			<hr />
+
+			<br /> <br />
+
+			<div class="workReferences">
+				<h2><strong>REFERENCIAS DE TRABAJO</strong></h2>
+			</div>
+			
+			<p><strong><u>(Introduzca n / a en los campos vacíos)</u></strong></p>
+			<br /> <br /> <br />
+
+			<div class = "gridWork">
+
+				<div class = "name">
+					<p>Nombre</p>
+				</div>
+
+				<div class = "relationship">
+					<p>RELACIÓN</p>
+				</div>
+
+				<div class = "employer">
+					<p>EMPLEADOR</p>
+				</div>
+				
+				<div class = "position">
+					<p>PUESTO</p>
+				</div>
+
+				<div class = "addressAndPhone">
+					<p>DIRECCIÓN Y TELÉFONO</p>
+				</div>
+			</div>
+
+			<div class = "gridWorkInput">
+				<div class = "nameInput">
+					<input type = "text" name = "name" placeholder="name">
+
+				</div>
+
+				<div class = "relationshipInput">
+					<input type = "text" name = "relationship" placeholder="relationship">
+				</div>
+
+				<div class = "employerInput">
+					<input type = "text" name = "employer" placeholder="name">
+				</div>
+				
+				<div class = "positionInput">
+					<input type = "text" name = "position" placeholder="position">
+				</div>
+
+				<div class = "addressAndPhoneInput">
+					<input type = "text" name = "address" placeholder="address">
+					<input type = "text" name = "phone" placeholder="telephone">
+				</div>
+
+			</div>
+
+			<div class = "gridWorkInput2">
+				<div class = "nameInput">
+					<input type = "text" name = "name" placeholder="name">
+
+				</div>
+
+				<div class = "relationshipInput">
+					<input type = "text" name = "relationship" placeholder="relationship">
+				</div>
+
+				<div class = "employerInput">
+					<input type = "text" name = "employer" placeholder="name">
+				</div>
+				
+				<div class = "positionInput">
+					<input type = "text" name = "position" placeholder="position">
+				</div>
+
+				<div class = "addressAndPhoneInput">
+					<input type = "text" name = "address" placeholder="address">
+					<input type = "text" name = "phone" placeholder="telephone">
+				</div>
+
+			</div>
+
+			<div class = "gridWorkInput3">
+				<div class = "nameInput">
+					<input type = "text" name = "name" placeholder="name">
+
+				</div>
+
+				<div class = "relationshipInput">
+					<input type = "text" name = "relationship" placeholder="relationship">
+				</div>
+
+				<div class = "employerInput">
+					<input type = "text" name = "employer" placeholder="name">
+				</div>
+				
+				<div class = "positionInput">
+					<input type = "text" name = "position" placeholder="position">
+				</div>
+
+				<div class = "addressAndPhoneInput">
+					<input type = "text" name = "address" placeholder="address">
+					<input type = "text" name = "phone" placeholder="telephone">
+				</div>
+
+			</div>
+
+			<div class = "gridWorkInput4">
+				<div class = "nameInput">
+					<input type = "text" name = "name" placeholder="name">
+
+				</div>
+
+				<div class = "relationshipInput">
+					<input type = "text" name = "relationship" placeholder="relationship">
+				</div>
+
+				<div class = "employerInput">
+					<input type = "text" name = "employer" placeholder="name">
+				</div>
+				
+				<div class = "positionInput">
+					<input type = "text" name = "position" placeholder="position">
+				</div>
+
+				<div class = "addressAndPhoneInput">
+					<input type = "text" name = "address" placeholder="address">
+					<input type = "text" name = "phone" placeholder="telephone">
+				</div>
+
+			</div>
+
+			<div class = "relatives">
+				<p>¿Algún familiar suyo es empleado de esta Compañía o cualquiera de sus establecimientos? <input type = "radio" name = "choice12" />Si <input type = "radio" name = "choice12" />No</p>
+
+				<p>En caso afirmativo, provea detalles</p>
+				<textarea></textarea>
+
+
+			</div>
+
+			<div class = "relativesInfo">
+				<p> Nombre <input type = "text" name = "name" />&nbsp&nbsp&nbsp&nbsp&nbspRelación <input type = "text" name="relationship" /> &nbsp&nbsp&nbsp&nbsp&nbspEstablecimiento <input type = "text" name="facility" /> &nbsp&nbsp&nbsp&nbsp&nbspPuesto <input type = "text" name ="position" /> </p>
+
+				<p> Nombre <input type = "text" name = "name" />&nbsp&nbsp&nbsp&nbsp&nbspRelación <input type = "text" name="relationship" /> &nbsp&nbsp&nbsp&nbsp&nbspEstablecimiento <input type = "text" name="facility" /> &nbsp&nbsp&nbsp&nbsp&nbspPuesto <input type = "text" name ="position" /> </p>
+			</div>
+
+			<div class = "referrals">
+				<p>¿Cómo fue referido a esta Compañía?</p>
+				<input type = "checkbox" name="check"/> Internet/Bolsa de Trabajo <input type = "checkbox" name="check"/> Periódico <input type = "checkbox" name="check"/> Empleado <input type = "checkbox" name="check"/> Agencia <input type = "checkbox" name="check"/> Escuela <input type = "checkbox" name="check"/> Otro </strong>
+				<p>Provea el nombre o nombres de cada opción marcada</p>
+				<textarea></textarea>
+
+				<p>¿Ha trabajado para esta Compañía o cualquiera de sus establecimientos? <input type = "radio" name = "choice13" />Si <input type = "radio"name = "choice13" />No</p>
+				<p>En caso afirmativo, provea detalles:</p>
+				Establecimiento <input type = "text" name="facility"> &nbsp&nbsp&nbsp&nbsp&nbspFechas <input type = "text" name="date"> &nbsp&nbsp&nbsp&nbsp&nbspPuesto <input type = "text" name = "position"> </p>
+
+			</div>
+
+			<hr /> 
+			<br /> <br /> <br />
+			<h4><strong>POR FAVOR, LEA ATENTAMENTE Y FIRME MÁS ABAJO</strong></h4>
+
+			<p>Certifico que la información contenida en esta solicitud es correcta a mi mejor saber y entender. Comprendo que la falsificación de esta información o la omisión de material puede ocasionar la negativa a contratarme o mi despido en cualquier momento.
+
+			<br/><br/><br/>
+			Le concedo a la Compañía el derecho a realizar una investigación exhaustiva sobre mis empleos anteriores, educación, antecedentes financieros y actividades. Dispenso a todas las personas o entidades de toda responsabilidad legal por cualquier daño que pueda ocasionar el suministro de información a la Compañía. También dispenso a la Compañía y todos sus empleados de toda responsabilidad legal por cualquier daño que pueda ocasionar que la Compañía confíe en la información suministrada
+			<br/><br/><br/>
+			Mi empleo con la Compañía será sujeto a los resultados satisfactorios que yo obtenga en un examen médico posterior a la oferta laboral y/u otras pruebas médicas de detección de alcohol, drogas y sustancias controladas, que pueden incluir una muestra de sangre u orina. Antes de las pruebas, acepto firmar los formularios de autorización de la Compañía en los cuales aceptaré realizar dichas pruebas y autorizar la divulgación de los resultados a la Compañía. Tanto el examen físico como las pruebas de detección de sustancias serán realizados a expensas de la Compañía por un proveedor de atención médica elegido por la Compañía.  Yo entiendo que no tengo derecho a recibir salario por el tiempo dedicado a entrenamiento de seguridad y orientación, que pueden ser de 3-6 horas. 
+			<br/><br/><br/>
+			Debo presentar los documentos correspondientes que demuestren que soy un ciudadano estadounidense o un extranjero legalmente autorizado a trabajar en Estados Unidos dentro del plazo especificado por la Compañía, a fin de satisfacer los requisitos de la Ley de Reforma y Control de la Inmigración de 1986. 
+
+			<br/> <br/><br/>
+			En consideración a mi empleo, acepto cumplir con las políticas, normas y disposiciones de la Compañía. Comprendo y acepto que mi relación laboral es a voluntad, y que, como consecuencia, tanto mi empleo como la compensación pueden ser interrumpidos justificada o injustificadamente, con o sin aviso previo, en cualquier momento, a elección mía o de la Compañía. Además, comprendo y acepto que esta relación laboral a voluntad conforme se define más arriba permanecerá en efecto a lo largo de todo mi empleo con la Compañía o cualquiera de sus compañías matrices o afiliadas, a menos que ello sea modificado por un contrato laboral expreso, escrito y firmado por el Presidente de la Compañía y por mí. La presente representa una política integrada con respecto a la naturaleza voluntaria de la relación laboral</p>
+			<br/><br/><br/>
+			<p>FIRMA DEL POSTULANTE <input type = "text" name = "name" placeholder="name" /></p>
+			<p>FECHA <input type = "text" name = "date" placeholder="1/1/16" /></p>
+
+			<hr />
+
+			<br /> <br />
+			<div class = "lastPic">
+				<img src = "figure.png" />
+			</div>
+			
+			<div class = "last">
+				<h1><strong><i>Autorización Para el Lanzamiento de
+ 				Expedientes Médicos </i></strong></h3>
+
+				<p> Reconozco que mi patrón, General Coatings Corporation (“la compañía”), está preocupado sobre mi capacidad de realizar mi trabajo.  Reconozco más que la compañía me ha solicitado someterme a una prueba física previa al empleo. Estas pruebas serán administradas por la compañía o clínica señalada o por el laboratorio médico. El propósito y función es determinarse si puedo realizar mis deberes descritos del trabajo.  Autorizo por este medio la clínica y/o los laboratorios médicos están autorizados a divulgar si puedo realizar la función esencial de los deberes del trabajo y si he pasado o he fallado en la prueba física previa al empleo.  Reconozco esto, y por mi firma, ejecuto esta autorización de mi propia voluntad y tengo el derecha de recibir una copia de esta autorización si solicito una.</p>
+				<br /> <br /> <br />
+
+				<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNombre <input type = "text" name = "name" placeholder="name" />
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFecha <input type = "text" name = "date" placeholder="1/1/16" /> </p>
+
+				<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFirma <input type = "text" name = "firm"/>
+
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFirma de el Supervisor <input type = "text" name = "supervisor"/> </p>
+
+				<img src = "logo.png" />
+				<p><strong><i>Para asegurar buena salud: coma ligeramente, respire profundamente, viva moderado, cultive lo que le hace feliz, y mantenga un interés en vida.”</i></strong></p>
+
+				<br /> <br /> <br />
+				<p><strong>Antes de enviar , doble Vea todas las respuestas</strong>
+				<input type = "submit" name = "submit" value ="Submit All"/></p>
+
+				<br /><br /><br /><br /><br />
+			</div>
+	</form>
+
+
+</body>
+
+</html>
